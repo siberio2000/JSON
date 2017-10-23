@@ -1,0 +1,61 @@
+<!-- jsonlint.com - to verify json -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JSON practice</title>
+</head>
+
+<body>
+
+   <ul id="funds"></ul>
+
+    <script>
+        // json object 
+        var person = {
+            name: 'Roman',
+            age: '33',
+            address: {
+                street: '23 Lavender Road',
+                city: 'London'
+            },
+            children: ['Arina', 'Timur']
+        }
+
+        // this is is changes object to json string
+        // person = JSON.stringify(person);
+
+        //this is is changes json string to object
+        // person = JSON.parse(person);
+
+
+        var funds = [
+        {
+            source: 'Barclays',
+            amount: 22000
+        }, 
+        {
+            source: 'Lloyds',
+            amount: 35000
+        }, 
+        {
+            source: 'Trust',
+            amount: 98000
+        }]
+
+        var output = '';
+        for(var i = 0; i < funds.length; i++) {
+            // console.log(funds[i].source);  
+
+            output += '<li>'+ funds[i].source +'</li>'; 
+        }
+
+        document.getElementById('funds').innerHTML = output;
+
+
+        // console.log(person);
+    </script>
+
+</body>
+
+</html>

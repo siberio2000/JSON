@@ -1,0 +1,25 @@
+{ 
+    "funds": 
+    [
+        {
+            "source": "Barclays",
+            "amount": 22000
+        }, 
+        {
+            "source": "Lloyds",
+            "amount": 35000
+        }, 
+        {
+            "source": "Trust",
+            "amount": 98000
+        },
+        {
+            "source": "Nord",
+            "amount": 54000
+        },
+        {
+            "source": "Svenska",
+            "amount": 14000
+        }
+    ]
+}
